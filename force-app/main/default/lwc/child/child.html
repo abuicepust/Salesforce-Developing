@@ -1,0 +1,29 @@
+<template>
+<template if:true={isShow}>
+    <div  style="width: 400px; height: 200px">        
+        <lightning-input 
+            label="Name" 
+            onchange={handleInput} 
+            required 
+            value={firstName}>
+        </lightning-input>
+        <lightning-input             
+            label="Email"
+            onchange={handleInput}  
+            value={emailFieldValue}>
+            
+        </lightning-input>
+        <lightning-input 
+            label="Phone"
+            onchange={handleInput}  
+            value={phoneFieldValue}>
+        </lightning-input>
+        <lightning-button 
+            label="-" 
+            onclick={removeButton}  
+            >
+        </lightning-button>
+        <br>
+    </div> 
+</template>  
+</template>

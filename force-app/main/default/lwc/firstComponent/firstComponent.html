@@ -1,0 +1,87 @@
+<template>
+    <p style="background-color: red;">Hello there, my name is Sajib</p>
+    <div style="background-color: blue; color:red;">
+        Mobile: 01726669724
+    </div>
+    <div style="background-color: white; color:white;">
+        Hello this is new div
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{name}</th>
+                    <th>{age}</th>
+                    <th>{email}</th>
+                    <th>{phone}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <template for:each={arr} for:item="i">
+        <p key={i}>
+            {i}
+        </p>
+    </template>
+        <template lwc:if={big}>
+            <p>A is big</p>
+        </template>
+        <template lwc:else>
+            <p>B is big</p>
+        </template>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Is Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{person.name}</td>
+                        <td>{person.gender}</td>
+                        <td>{person.email}</td>
+                        <td>{person.contact}</td>
+                        <td>
+                            <div if:true={person.isActive} style="color: green">
+                                <strong>Active</strong>
+                            </div>
+                            <div if:false={person.isActive} style="color: red">
+                                <strong>Inactive</strong>
+                            </div>
+                        </td>
+                        <!-- <td><div if:true={person.isActive}>Active</div></td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={data2}
+                    columns={columns2}>
+            </lightning-datatable>
+        </div>
+
+</template>

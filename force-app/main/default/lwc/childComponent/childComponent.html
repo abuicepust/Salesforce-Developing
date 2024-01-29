@@ -1,0 +1,30 @@
+<template>
+    <template if:false={vanish}>
+        <p>
+            hello, {childkey}
+        </p>
+        <div  style="width: 400px; height: 200px">
+            <lightning-input 
+                label="Name" 
+                onchange={handleInput} 
+                required 
+                value={Name}>
+            </lightning-input>
+            <lightning-input 
+                label="Email" 
+                onchange={handleInput} 
+                value={emailFieldValue}>
+            </lightning-input>
+            <lightning-input 
+                label="Phone" 
+                onchange={handleInput}
+                value={phoneFieldValue}>
+            </lightning-input>
+            <lightning-button
+                label="-"
+                onclick={handleVanish}
+            >
+            </lightning-button>
+        </div>
+    </template>
+</template>

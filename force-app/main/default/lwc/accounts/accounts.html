@@ -1,0 +1,60 @@
+<template>
+    <div><br>
+    <label class="slds-var-m-around_medium"  for="tname">Enter Team's Name:</label><br>
+    <input class="slds-var-m-around_medium" type="text" value="" onchange={teamsName}/><br>
+    <input class="slds-var-m-around_medium" type="text" value="" onchange={teamDetails}/><br>
+    </div>
+    <p>
+        For creating Contact
+    </p>
+    <div>
+        <h1 class="slds-text-heading_large">Fill up for contact 1</h1>
+        <label class="slds-var-m-around_medium" for="cname">Enter Contact Name: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={contactName1}/>
+        <label class="slds-var-m-around_medium" for="email">Enter Email: </label>
+        <input class="slds-var-m-around_medium" type="email" value="" onchange={Email1}/>
+        <label class="slds-var-m-around_medium" for="text">Enter Phone Number: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={phoneNumber1}/>
+    </div>
+    <div>
+        <h1 class="slds-text-heading_large">Fill up for contact 2</h1>
+        <label class="slds-var-m-around_medium" for="cname">Enter Contact Name: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={contactName2}/>
+        <label class="slds-var-m-around_medium" for="email">Enter Email: </label>
+        <input class="slds-var-m-around_medium" type="email" value="" onchange={Email2}/>
+        <label class="slds-var-m-around_medium" for="text">Enter Phone Number: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={phoneNumber2}/>
+    </div>
+    <div>
+        <h1 class="slds-text-heading_large">Fill up for contact 3</h1>
+        <label class="slds-var-m-around_medium" for="cname">Enter Contact Name: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={contactName3}/>
+        <label class="slds-var-m-around_medium" for="email">Enter Email: </label>
+        <input class="slds-var-m-around_medium" type="email" value="" onchange={Email3}/>
+        <label class="slds-var-m-around_medium" for="text">Enter Phone Number: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={phoneNumber3}/>
+    </div>
+    <div>
+        <h1 class="slds-text-heading_large">Fill up for contact 4</h1>
+        <label class="slds-var-m-around_medium" for="cname">Enter Contact Name: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={contactName4}/>
+        <label class="slds-var-m-around_medium" for="email">Enter Email: </label>
+        <input class="slds-var-m-around_medium" type="email" value="" onchange={Email4}/>
+        <label class="slds-var-m-around_medium" for="text">Enter Phone Number: </label>
+        <input class="slds-var-m-around_medium" type="text" value="" onchange={phoneNumber4}/>
+    </div>
+    <div>
+        <input class="slds-var-m-around_medium" type="button" value="Submit" onclick={handleChange}/>
+    </div>
+    <div>
+        <p onchage={errorMessage}>
+            {errorMessage}
+        </p>
+    </div>
+    <div>
+        <p onchage={success}>
+            {success}
+        </p>
+    </div>   
+    
+</template> 

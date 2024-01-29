@@ -1,0 +1,47 @@
+<template>
+    <div style="background-color: red; color:white;">
+        Hello this is new div
+    </div>
+
+    <lightning-datatable
+        data={data}
+        columns={columns}
+        key-field="Id"
+    >
+    </lightning-datatable>
+
+    <lightning-datatable
+        data={data2}
+        columns={columns2}
+        key-field="Id"
+    ><p>Hello</p>
+    </lightning-datatable>
+    <!-- <lightning-datatable
+        key-field="Id"
+        data={contacts.data}
+        columns={columns}
+    >
+    </lightning-datatable> -->
+
+    <lightning-record-form
+    object-api-name="Contact"
+    fields={myFields}
+    onsuccess={handleAccountCreated}
+  >
+  </lightning-record-form>
+
+  <!-- <form action="/action_page.php" onsubmit={myFunction}>
+    <label for="lName">Enter Last Name</label><br>
+    <input type="text" id="signup">
+    <input type="button" value="Submit">
+  </form> -->
+
+  
+    <input type="text" value={myValue} onchange={handleChange}/>
+    <input type="button" value="Submit" onchange={handleChange}/>
+
+    <!-- <input type="button" value={myValue} onchange={handleChange} /> -->
+
+  
+    
+</template>

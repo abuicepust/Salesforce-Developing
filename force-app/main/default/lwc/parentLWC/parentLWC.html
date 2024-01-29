@@ -1,0 +1,38 @@
+<template>
+    <div  style="width: 400px; height: 200px">
+        <lightning-input 
+            label="Name" 
+            onchange={getName} 
+            required 
+            value={Name}>
+        </lightning-input>
+        <lightning-input 
+            label="Email" 
+            onchange={getEmail} 
+            value={emailFieldValue}>
+        </lightning-input>
+        <lightning-input 
+            label="Phone" 
+            onchange={getPhone} 
+            value={phoneFieldValue}>
+        </lightning-input>
+    </div>
+    <div>
+        <template for:each={children} for:item="child">
+            <c-child key={child.key} childkey={child.key} ongetdata={ReceiveData}></c-child>
+        </template>
+        <lightning-button 
+            label="+" 
+            onclick={handleClick}  
+            >
+        </lightning-button>
+    </div>
+    <div>
+        <lightning-button 
+            label="Submit" 
+            onclick={handleSubmit}  
+            >
+        </lightning-button><br>
+    </div>
+
+</template>
