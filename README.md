@@ -1,4 +1,4 @@
-# Getting Started with Saleforce.com
+# Getting Started with Salesforce.com
 
 In this repository you can find some Apex classes, LWCs, AURA apps, Triggers, Parent-Child relationship and so On. 
 
