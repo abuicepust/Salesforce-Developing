@@ -258,3 +258,12 @@ At first, I created Parent LWC, added some input fields, a “+” button, and a
 Thereafter, I created Child LWC, same as Parent LWC I created some input fields. a “-” button.
 Furthermore, I connected the Parent LWC with Child LWC.
 Lastly, whenever the “+” button or “-” button is clicked, the input field will change automatically to it’s defined values.
+
+
+
+***The verdict of this work: When one user clicks on the “+” button, all the child components mean the same component of the parent component will appear again. When the user clicks on the “-” button, the child components disappear. If the user fills out all the required fields and clicks on the submit button, all the data will be inserted into the database.***
+
+
+
+![scrnli_1_30_2024_7-34-33 PM](https://github.com/abuicepust/Salesforce-Developing/assets/106046617/c87a09e3-c5db-4797-80ea-b7d56c47edf4)
+![scrnli_1_30_2024_7-34-04 PM](https://github.com/abuicepust/Salesforce-Developing/assets/106046617/b39ce66a-f0bb-4a99-b52b-a0c0f6068ce9)
