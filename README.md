@@ -248,3 +248,7 @@ List<Messaging.SingleEmailMessage>();
 ```
 
 ***Verdict of this work: After Clicking the SUBMIT button If the account name is unique, then the account is created, and if all the contact emails are unique, then the contact will be created. After successful contact insertion, a successful message will automatically be sent to all of the successfully created contacts; in this case, it’s four contacts.***
+
+
+-Task-2:
+Create a form, add “+” button, which will create another form of same type, add “-” button, which will remove one form of same type.
