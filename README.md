@@ -252,3 +252,9 @@ List<Messaging.SingleEmailMessage>();
 
 -Task-2:
 Create a form, add “+” button, which will create another form of same type, add “-” button, which will remove one form of same type.
+
+**Approach:**
+At first, I created Parent LWC, added some input fields, a “+” button, and a “Submit” button.
+Thereafter, I created Child LWC, same as Parent LWC I created some input fields. a “-” button.
+Furthermore, I connected the Parent LWC with Child LWC.
+Lastly, whenever the “+” button or “-” button is clicked, the input field will change automatically to it’s defined values.
